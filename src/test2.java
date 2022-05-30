@@ -1,5 +1,4 @@
 import com.formdev.flatlaf.*;
-
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -43,12 +42,12 @@ public class test2 {
         userName.setBounds(212, 170, 200, 30);
         JPasswordField passWord = new JPasswordField();
         passWord.setBounds(212, 220, 200, 30);
-        JLabel textFirst = new JLabel("ÓÃ»§Ãû:");
-        JLabel textSecond = new JLabel("ÃÜÂë:");
+        JLabel textFirst = new JLabel("ç”¨æˆ·å:");
+        JLabel textSecond = new JLabel("å¯†ç :");
         textFirst.setBounds(170, 170, 200, 30);
         textSecond.setBounds(182, 220, 200, 30);
-        JButton in = new JButton("µÇÂ½");
-        JButton noPass = new JButton("×¢²á");
+        JButton in = new JButton("ç™»é™†");
+        JButton noPass = new JButton("æ³¨å†Œ");
     //    noPass.setBorderPainted(false);
         in.setBounds(332, 265, 80, 35);
         noPass.setBounds(212,265, 80, 35);
