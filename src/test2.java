@@ -1,15 +1,10 @@
 import com.formdev.flatlaf.*;
-import panel.game;
+import Game.GameWin;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import javax.swing.plaf.FontUIResource;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Enumeration;
-import java.util.Hashtable;
 
 public class test2 {
 
@@ -61,9 +56,14 @@ public class test2 {
 
 
 
+
+
+
+
     public static void main(String[] args) {
         loginInterface();   //qww你之前所有的代码我都给你扔这里面了,给我们留一个干净的主函数吧
-        game.game();
+        GameWin gameWin = new GameWin();
+        gameWin.launch();
     }
 }
 
