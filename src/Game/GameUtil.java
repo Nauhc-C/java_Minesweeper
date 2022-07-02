@@ -19,8 +19,6 @@ public class GameUtil {
 
     //底层元素   -1 雷   0空    1-8代表数字
     static int[][] DATA_BOTTOM = new int[Map_H+2][Map_H+2];
-
-
     static int[][] DATA_TOP = new int[Map_H+2][Map_H+2];  //顶层元素 -1 无覆盖 0 覆盖 1插旗 2差错旗
 
 
