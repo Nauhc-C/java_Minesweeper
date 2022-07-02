@@ -30,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/86183/IdeaProjects/Minesweeper",
+    "last_opened_file_path": "C:/Users/86183/IdeaProjects/Minesweeper/image",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -38,6 +38,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\86183\IdeaProjects\Minesweeper\image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\86183\IdeaProjects\Minesweeper\src" />
     </key>
@@ -67,6 +70,7 @@
       <workItem from="1654394943109" duration="2411000" />
       <workItem from="1654430146052" duration="2818000" />
       <workItem from="1656658279372" duration="2799000" />
+      <workItem from="1656759710093" duration="2618000" />
     </task>
     <servers />
   </component>
