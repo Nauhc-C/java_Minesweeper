@@ -16,6 +16,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="FlatLaf-2.3" level="project" />
+    <orderEntry type="library" name="flatlaf-2.3" level="project" />
   </component>
 </module>

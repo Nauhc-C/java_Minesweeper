@@ -6,7 +6,7 @@ import javax.swing.plaf.FontUIResource;
 import java.awt.*;
 import java.util.Enumeration;
 
-public class test2 {
+public class login {
 
     private static void InitGlobalFont(Font font) {
         FontUIResource fontRes = new FontUIResource(font);
@@ -23,7 +23,7 @@ public class test2 {
         InitGlobalFont(new Font("MiSans", Font.PLAIN, 12));
         System.setProperty("awt.useSystemAAFontSettings", "on");
         System.setProperty("swing.aatext", "true");
-
+        FlatLightLaf.setup();
         JFrame login = new JFrame("Login in mine clearance");
         login.setSize(640, 360);
         login.setResizable(false);
