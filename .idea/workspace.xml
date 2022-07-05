@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5787efa7-4638-4560-a56b-363e2ddd8e3e" name="Changes" comment="Changes">
+    <list default="true" id="5787efa7-4638-4560-a56b-363e2ddd8e3e" name="Changes" comment="修改文件命名">
+      <change afterPath="$PROJECT_DIR$/src/MD5Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UsersTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,6 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Download/flatlaf-2.3.jar",
     "node.js.detected.package.eslint": "true",
@@ -57,10 +58,20 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\86183\IdeaProjects\Minesweeper\src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="login" />
+  <component name="RunManager" selected="应用程序.UsersTable">
+    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Login" />
+      <module name="Minesweeper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UsersTable" />
       <module name="Minesweeper" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,7 +79,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.login" />
+        <item itemvalue="应用程序.UsersTable" />
+        <item itemvalue="应用程序.Login" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +98,7 @@
       <workItem from="1656759710093" duration="2618000" />
       <workItem from="1656767446643" duration="1511000" />
       <workItem from="1656769338014" duration="236000" />
-      <workItem from="1656995063464" duration="1324000" />
+      <workItem from="1656995063464" duration="5514000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1656995472624</created>
@@ -95,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656995472624</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改文件命名">
+      <created>1656996586976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656996586976</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +133,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="修改文件命名" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改文件命名" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

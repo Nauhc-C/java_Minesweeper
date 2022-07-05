@@ -6,7 +6,7 @@ import javax.swing.plaf.FontUIResource;
 import java.awt.*;
 import java.util.Enumeration;
 
-public class login {
+public class Login {
 
     private static void InitGlobalFont(Font font) {
         FontUIResource fontRes = new FontUIResource(font);
