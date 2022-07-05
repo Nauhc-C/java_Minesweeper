@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5787efa7-4638-4560-a56b-363e2ddd8e3e" name="Changes" comment="修改文件命名">
-      <change afterPath="$PROJECT_DIR$/src/MD5Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UsersTable.java" afterDir="false" />
+    <list default="true" id="5787efa7-4638-4560-a56b-363e2ddd8e3e" name="Changes" comment="完成用户登录的底层操作">
+      <change afterPath="$PROJECT_DIR$/src/PreWork/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/userstable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/userstable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PreWork/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MD5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PreWork/MD5Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsersTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PreWork/UsersTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +33,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2A8d2o36PEWAXyEu4qkVretwKu7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -48,7 +55,7 @@
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "settings.editor.selected.configurable": "Console"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,16 +69,30 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.UsersTable">
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Login" />
+  <component name="RunManager" selected="应用程序.main">
+    <configuration name="PreWork.Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PreWork.Login" />
       <module name="Minesweeper" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsersTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UsersTable" />
+    <configuration name="PreWork.Register" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PreWork.Register" />
+      <module name="Minesweeper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PreWork.UsersTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PreWork.UsersTable" />
+      <module name="Minesweeper" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
       <module name="Minesweeper" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,8 +100,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.UsersTable" />
-        <item itemvalue="应用程序.Login" />
+        <item itemvalue="应用程序.main" />
+        <item itemvalue="应用程序.PreWork.Login" />
+        <item itemvalue="应用程序.PreWork.Register" />
+        <item itemvalue="应用程序.PreWork.UsersTable" />
       </list>
     </recent_temporary>
   </component>
@@ -98,7 +121,7 @@
       <workItem from="1656759710093" duration="2618000" />
       <workItem from="1656767446643" duration="1511000" />
       <workItem from="1656769338014" duration="236000" />
-      <workItem from="1656995063464" duration="5514000" />
+      <workItem from="1656995063464" duration="16919000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1656995472624</created>
@@ -114,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656996586976</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成用户登录的底层操作">
+      <created>1657001152530</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657001152530</updated>
+    </task>
+    <task id="LOCAL-00004" summary="完成用户登录的底层操作">
+      <created>1657001372403</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657001372403</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,9 +169,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changes" />
     <MESSAGE value="修改文件命名" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改文件命名" />
+    <MESSAGE value="完成用户登录的底层操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户登录的底层操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

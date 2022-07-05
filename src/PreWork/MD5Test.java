@@ -1,7 +1,7 @@
-import java.io.UnsupportedEncodingException;
+package PreWork;
+
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 public class MD5Test {
     public static String getMd5(String text) {
@@ -22,7 +22,4 @@ public class MD5Test {
         }
 
     }
-
-
-
 }
