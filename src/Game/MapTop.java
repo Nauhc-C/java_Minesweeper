@@ -166,6 +166,7 @@ public class MapTop { // 上层图
         }
         if (count == GameUtil.RAY_MAX) {
             GameUtil.state = 1;
+            GameUtil.Play_time = (GameUtil.End_time - GameUtil.Start_time) / 1000;
             for (int i = 1; i <= GameUtil.Map_W; i++) {
                 for (int j = 1; j <= GameUtil.Map_H; j++) {
                     // 未翻开,变成旗
