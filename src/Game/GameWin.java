@@ -1,7 +1,12 @@
 package Game;
 
+import AboutTopList.ShowList;
+import AboutTopList.TopList;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Scanner;
@@ -41,10 +46,10 @@ public class GameWin extends JFrame {
                             GameUtil.MOUSE_Y = e.getY();
                             GameUtil.LEFT = true;
                             GameUtil.RIGHT = false;
-                            System.out.println("1" + GameUtil.LEFT);
+      //                      System.out.println("1" + GameUtil.LEFT);
                         }
                         if (e.getButton() == 3) { // 右键
-                            System.out.println("3");
+     //                       System.out.println("3");
                             GameUtil.MOUSE_X = e.getX();
                             GameUtil.MOUSE_Y = e.getY();
                             GameUtil.LEFT = false;
@@ -82,6 +87,20 @@ public class GameWin extends JFrame {
 
                 }
 
+            }
+        });
+        this.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if (e.getKeyChar() == 'k') {
+                    ShowList.TopListInterFace();
+                }
+            }
+            @Override
+            public void keyPressed(KeyEvent e) {
+            }
+            @Override
+            public void keyReleased(KeyEvent e) {
             }
         });
         while (true) {
@@ -151,5 +170,7 @@ public class GameWin extends JFrame {
     public static void main(String[] args) {
         GameWin gameWin = new GameWin();
         gameWin.launch();
+
+
     }
 }

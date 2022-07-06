@@ -15,7 +15,6 @@ import java.util.Date;
 
 public class TopList {
     private static ArrayList<Record> table = new ArrayList<Record>();
-
     private static Path dataPath = Paths.get("data/toptable.txt");
 
 

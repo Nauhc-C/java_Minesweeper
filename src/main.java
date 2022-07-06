@@ -13,7 +13,6 @@ public class main {
         while (!Login.getStartGame()) {
             Thread.sleep(100);
         }
-        TopList.add(10);
-        ShowList.TopListInterFace();
+        new GameWin().launch();
     }
 }

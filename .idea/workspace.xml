@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5787efa7-4638-4560-a56b-363e2ddd8e3e" name="Changes" comment="优化,登录,注册和底层密码加密脱离&#10;优化,打包封装">
-      <change afterPath="$PROJECT_DIR$/src/AboutTopList/ShowList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AboutTopList/TopList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5787efa7-4638-4560-a56b-363e2ddd8e3e" name="Changes" comment="增加排行榜功能,优化main类&#10;登录时获取ip">
+      <change afterPath="$PROJECT_DIR$/data/toptable.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/userstable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/userstable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AboutTopList/TopList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AboutTopList/TopList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/GameWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/GameWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PreWork/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PreWork/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,25 +38,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Download/flatlaf-2.3.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "Console"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Download/flatlaf-2.3.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\86183\IdeaProjects\Minesweeper\image" />
@@ -120,9 +119,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.main" />
+        <item itemvalue="应用程序.GameWin" />
         <item itemvalue="应用程序.ShowList" />
         <item itemvalue="应用程序.PreWork.Login" />
-        <item itemvalue="应用程序.GameWin" />
         <item itemvalue="应用程序.PreWork.Register" />
       </list>
     </recent_temporary>
@@ -142,7 +141,8 @@
       <workItem from="1656767446643" duration="1511000" />
       <workItem from="1656769338014" duration="236000" />
       <workItem from="1656995063464" duration="17616000" />
-      <workItem from="1657087773402" duration="14984000" />
+      <workItem from="1657087773402" duration="16125000" />
+      <workItem from="1657105855761" duration="2926000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1656995472624</created>
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657012754612</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="增加排行榜功能,优化main类&#10;登录时获取ip">
+      <created>1657103627165</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657103627165</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +217,8 @@
     <MESSAGE value="完成用户登录的底层操作" />
     <MESSAGE value="优化,和底层密码加密脱离" />
     <MESSAGE value="优化,登录,注册和底层密码加密脱离&#10;优化,打包封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化,登录,注册和底层密码加密脱离&#10;优化,打包封装" />
+    <MESSAGE value="增加排行榜功能,优化main类&#10;登录时获取ip" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加排行榜功能,优化main类&#10;登录时获取ip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
