@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Scanner;
 
 public class GameWin extends JFrame {
     int width = 2 * GameUtil.offset + GameUtil.Map_W * GameUtil.Square_length;
@@ -19,8 +20,9 @@ public class GameWin extends JFrame {
         GameUtil.Start_time = System.currentTimeMillis();// 记录时间
         this.setVisible(true);
         if (GameUtil.state == 3) {
-            this.setSize(500, 500);
+            this.setSize(650, 650);
         } else {
+            GameUtil.state = 0;
             this.setSize(width, height);
         }
         this.setLocationRelativeTo(null);
@@ -98,6 +100,28 @@ public class GameWin extends JFrame {
             begin = false;
             gameSelect.hard(GameUtil.level);
             dispose();// 将选择难度的窗口关闭
+            if (GameUtil.level == 4) {
+                System.out.println("请按顺序输入你想要选择的地图大小（先输入长（最大值为30）再输入宽（最大值为15））以及地雷个数（最大值为70,且不能超过地图面积）：");
+                Scanner sc = null;
+                sc = new Scanner(System.in);
+                GameUtil.Map_W = sc.nextInt();
+                GameUtil.Map_H = sc.nextInt();
+                GameUtil.RAY_MAX = sc.nextInt();
+                int flag = 0;
+                while (flag == 0) {
+                    if (GameUtil.Map_W > 0 && GameUtil.Map_W <= 30 && GameUtil.Map_H > 0 && GameUtil.Map_H <= 15
+                            && GameUtil.RAY_MAX > 0 && GameUtil.RAY_MAX <= 70
+                            && GameUtil.RAY_MAX < GameUtil.Map_W * GameUtil.Map_H)
+                        flag = 1;
+                    else {
+                        System.out.println("输入不符合要求，请重新输入地图大小（先输入长（最大值为30）再输入宽（最大值为15））以及地雷个数（最大值为70）：");
+                        GameUtil.Map_W = sc.nextInt();
+                        GameUtil.Map_H = sc.nextInt();
+                        GameUtil.RAY_MAX = sc.nextInt();
+                    }
+                }
+                sc.close();
+            }
             GameWin gameWin = new GameWin();
             GameUtil.Start_time = System.currentTimeMillis();
             GameUtil.FLAG_NUM = 0;
@@ -111,7 +135,7 @@ public class GameWin extends JFrame {
     public void paint(Graphics g) {
         if (GameUtil.state == 3) {
             g.setColor(Color.white);
-            g.fillRect(0, 0, 500, 500);
+            g.fillRect(0, 0, 650, 650);
             gameSelect.paintSelf(g);
         } else {
             offScreenImage = this.createImage(width, height);

@@ -22,6 +22,11 @@ public class GameSelect {
                 GameUtil.state = 0;
                 return true;
             }
+            if (GameUtil.MOUSE_Y > 500 && GameUtil.MOUSE_Y < 600) {
+                GameUtil.level = 4;
+                GameUtil.state = 0;
+                return true;
+            }
         }
         return false;
     }
@@ -36,6 +41,9 @@ public class GameSelect {
 
         g.drawRect(100, 350, 300, 100);
         GameUtil.drawWord(g, "困难", 220, 400, 30, Color.black);
+
+        g.drawRect(100, 500, 300, 100);
+        GameUtil.drawWord(g, "自定义", 220, 550, 30, Color.black);
     }
 
     void hard(int level) {// 方法重载，设置难度
@@ -54,6 +62,9 @@ public class GameSelect {
                 GameUtil.RAY_MAX = 70;
                 GameUtil.Map_W = 30;
                 GameUtil.Map_H = 15;
+                break;
+            case 4:
+
                 break;
             default:
         }
