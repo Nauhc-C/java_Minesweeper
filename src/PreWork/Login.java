@@ -8,10 +8,18 @@ import javax.swing.plaf.FontUIResource;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.Enumeration;
 
 public class Login {
     private static JFrame login = new JFrame("Login");
+
+    private static boolean startGame = false;
+
+    private static String userName;
+
+    private static String ip;
 
     public static void InitGlobalFont(Font font) {
         FontUIResource fontRes = new FontUIResource(font);
@@ -58,8 +66,15 @@ public class Login {
                 } else {
                     if (UsersTable.cmp(userName.getText(), String.valueOf(passWord.getPassword()))) {
                         JOptionPane.showMessageDialog(new JPanel(null), "登录成功, 欢迎!\n"+ userName.getText(), "通知", JOptionPane.INFORMATION_MESSAGE);
+                        startGame = true;
+                        Login.userName = userName.getText();
+                        try {
+                            Login.ip = InetAddress.getLocalHost().getHostAddress();
+                        } catch (UnknownHostException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                        System.out.println(Login.ip);
                         login.dispose();
-                        new GameWin().launch();
                     } else {
                         JOptionPane.showMessageDialog(new JPanel(null), "密码错误", "警告", JOptionPane.WARNING_MESSAGE);
                     }
@@ -94,11 +109,24 @@ public class Login {
         login.setVisible(i);
     }
 
+    public static boolean getStartGame() {
+        return startGame;
+    }
+
+    public static String getUserName() {
+        return userName;
+    }
+
+    public static String getIp() {
+        return ip;
+    }
+
     public static void main(String[] args) {
         UsersTable.readAll();
-        loginInterface();   //qww你之前所有的代码我都给你扔这里面了,给我们留一个干净的主函数吧
-//        GameWin gameWin = new GameWin();
-//        gameWin.launch();
+        loginInterface();
+        new GameWin().launch();//qww你之前所有的代码我都给你扔这里面了,给我们留一个干净的主函数吧
+   //     GameWin gameWin = new GameWin();
+     //   gameWin.launch();
     }
 }
 
