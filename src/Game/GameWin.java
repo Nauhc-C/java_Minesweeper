@@ -144,12 +144,12 @@ public class GameWin extends JFrame {
                         GameUtil.RAY_MAX = sc.nextInt();
                     }
                 }
-                sc.close();
             }
             GameWin gameWin = new GameWin();
             GameUtil.Start_time = System.currentTimeMillis();
             GameUtil.FLAG_NUM = 0;
             GameUtil.Play_time = 0;
+            GameUtil.level = -1;
             mapBotton.reGame();
             mapTop.reGame();
             gameWin.launch();
