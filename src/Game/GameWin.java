@@ -55,7 +55,12 @@ public class GameWin extends JFrame {
                             GameUtil.LEFT = false;
                             GameUtil.RIGHT = true;
                         }
+
                     case 1:
+                        if (GameUtil.Play_time != 0) {
+                            TopList.add((int)GameUtil.Play_time);
+                            GameUtil.Play_time = 0;
+                        }
                     case 2:
                         if (e.getButton() == 1) {
                             if (e.getX() > GameUtil.offset + GameUtil.Square_length * (GameUtil.Map_W / 2)

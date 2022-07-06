@@ -64,7 +64,7 @@ public class ShowList {
 
         String[] colunmNames = {"用户", "时间", "用时", "IP"};
         Object[][] myData = new Object[50][4];
-        for (int i = 0; i < TopList.getNum() && i < 20; i++) {
+        for (int i = 0; i < TopList.getNum() && i < 50; i++) {
             Record temp = TopList.getForCode(i);
             myData[i][0] = temp.getUserName();
             myData[i][1] = temp.getTime();
