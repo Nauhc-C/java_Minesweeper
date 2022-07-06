@@ -101,7 +101,6 @@ public class MapBotton {
                         GameUtil.offset + GameUtil.Square_length * (GameUtil.Map_W / 2),
                         GameUtil.offset,
                         null);
-                GameUtil.Play_time = (GameUtil.End_time - GameUtil.Start_time) / 1000;
                 break;
             case 2:
                 g.drawImage(GameUtil.over,
