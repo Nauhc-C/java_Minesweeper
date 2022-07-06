@@ -21,6 +21,7 @@ public class GameWin extends JFrame {
         if (GameUtil.state == 3) {
             this.setSize(500, 500);
         } else {
+            GameUtil.state = 0;
             this.setSize(width, height);
         }
         this.setLocationRelativeTo(null);
